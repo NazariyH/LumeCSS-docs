@@ -26,10 +26,10 @@ module.exports = {
                 '@fade',
                 '@bounce',
             ],
-            defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+            whitelistPatterns: [/lumcecss/],
+            defaultExtractor: content => content.match(/[A-Za-z0-9-_:\/.]+/g) || [],
             keyframes: false,
             fontFace: true,
-            whitelistPatterns: [/lumecss/],
         }),
     ],
 };
