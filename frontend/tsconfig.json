@@ -1,0 +1,17 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,          // Enable all strict type-checking options
+    "skipLibCheck": true,    // Skip type checking of declaration files to speed up the build
+    "noImplicitAny": false,  // Allows implicit any in some cases (optional, depends on your needs)
+    "paths": {
+      "@/*": ["./src/*"]     // You can add path aliases if you have custom directory structures
+    }
+  },
+  "include": [
+    "nuxt.config.ts",        // Include Nuxt config for TypeScript support
+    "pages/**/*.ts",         // Include all TypeScript files in the pages directory
+    "components/**/*.ts",    // Include all TypeScript files in the components directory
+    "store/**/*.ts"          // Include all TypeScript files in the store directory
+  ]
+}
