@@ -19,6 +19,8 @@ module.exports = {
                 'show',
                 'in-view',
                 'removing',
+                'show-password',
+                'hide-password',
                 '@slideInFadeRight',
                 '@slideInFadeLeft',
                 '@slideInFadeUp',
