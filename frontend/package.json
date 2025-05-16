@@ -14,7 +14,7 @@
     "lumecss:build-icons": "mkdir -p public/assets/icons && npx ncp node_modules/lumecss/dist/assets/icons public/assets/icons"
   },
   "dependencies": {
-    "lumecss": "^1.0.3",
+    "lumecss": "^1.0.4",
     "nuxt": "^3.17.2",
     "prismjs": "^1.30.0",
     "vue": "^3.5.13",
