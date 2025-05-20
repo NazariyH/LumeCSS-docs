@@ -1,6 +1,6 @@
 // plugins/prism.client.ts
 import Prism from 'prismjs'
-import 'prismjs/themes/prism-tomorrow.css' // Dark theme
+import 'prismjs/themes/prism-tomorrow.css'
 
 // Load language components
 import 'prismjs/components/prism-javascript'
