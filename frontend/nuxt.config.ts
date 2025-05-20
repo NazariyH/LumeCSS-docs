@@ -5,10 +5,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: 'stylesheet', href: '/main.min.css' }
+        { rel: 'stylesheet', href: '/lumecss.min.css' }
       ],
       script: [
-        { src: '/main.min.js', type: 'text/javascript', defer: true }
+        { src: '/lumecss.min.js', type: 'text/javascript', defer: true }
       ]
     }
   },
