@@ -78,6 +78,7 @@
         background-image: url("/images/grid-1-img.jpg");
         background-size: cover !important;
         background-position: center !important;
+        transition: all 10s linear !important;
 
         & > div {
             transition: background-color 1000ms ease !important;
@@ -88,6 +89,7 @@
         background-image: url("/images/grid-2-img.jpg");
         background-size: cover !important;
         background-position: center !important;
+        transition: all 10s linear !important;
 
         & > div {
             transition: background-color 1000ms ease !important;
@@ -98,6 +100,7 @@
         background-image: url("/images/grid-3-img.jpg");
         background-size: cover !important;
         background-position: center !important;
+        transition: all 10s linear !important;
 
         & > div {
             transition: background-color 1000ms ease !important;
@@ -108,6 +111,7 @@
         background-image: url("/images/grid-4-img.jpg");
         background-size: cover !important;
         background-position: center !important;
+        transition: all 10s linear !important;
 
         & > div {
             transition: background-color 1000ms ease !important;
