@@ -120,9 +120,13 @@
 
 <script setup>
 import { ref } from 'vue'
+const { copyToClipboard } = useClipboard(); // Import the copy to clipboard function
 
 // Installation via npm Command
 const installViaNpmCommand = ref('$ npm install lumecss')
+
+// Build lumecss command
+const purgeCSSCode = ref('not awailable')
 
 // Command for building LumeCSS
 const buildLumecssCommand = ref('npx lumecss lumecss:build --output ./path')

@@ -122,26 +122,7 @@ import DarkThemeIntroduction from "../components/DarkThemeIntroduction.vue"
 import Transforms from "../components/Transforms.vue";
 import GridIntroduction from "../components/GridIntroduction.vue";
 
-// Copy function
-const copyToClipboard = async (event, text) => {
-    const icon = event.target; // Get the clicked image element (the clipboard icon)
-
-    try {
-        // Copy text to the clipboard
-        await navigator.clipboard.writeText(text);
-
-        // Change the icon to the check icon
-        icon.src = '/icons/check-icon.svg';
-
-        // After 3 second, revert the icon back to the clipboard icon
-        setTimeout(() => {
-            icon.src = '/icons/clipboard-icon.svg';
-        }, 3000);
-
-    } catch (err) {
-        console.error('Error copying text: ', err);
-    }
-};
+const { copyToClipboard } = useClipboard(); // Import the copy to clipboard function
 </script>
 
 <style lang="scss">

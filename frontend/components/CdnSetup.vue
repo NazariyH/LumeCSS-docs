@@ -66,6 +66,7 @@
 
 <script setup>
 import { ref } from 'vue'
+const { copyToClipboard } = useClipboard(); // Import the copy to clipboard function
 
 // CDN CSS and JS link
 const cdnCSSLink = ref('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lumecss/dist/lume.css">')
