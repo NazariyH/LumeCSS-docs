@@ -18,7 +18,7 @@
         <div class="bg-dotted bg-gray-100 rounded-lg pt-8 xl:px-20 lg:px-20 md:px-16 sm:px-6 xs:px-2 flex
             justify-center">
             <div class="relative w-full h-30" ref="wrapper">
-                <div class="absolute top-0 left-half -translate-x-half w-0.5 h-full bg-flame z-3 cursor-pointer"
+                <div class="absolute top-0 left-half -translate-x-half w-0.5 h-full bg-flame z-3 cursor-ew-resize"
                      ref="draggable" :style="{ left: startX + '%' + ' !important' }"
                      @mousedown="startDrag">
 
