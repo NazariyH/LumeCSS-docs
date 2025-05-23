@@ -2,20 +2,23 @@
     <div class="w-full h-full bg-dotted rounded-lg min-h-20 flex justify-center pt-4 bg-gray-100 attachment-fixed
                 border-1 border-solid border-gray-300 overflow-hidden">
         <!-- Smartphone screen -->
-        <div class="phone-screen h-full border-10 border-solid border-b-0 rounded-lg rounded-b-none overflow-hidden
-                    relatives bg-light">
+        <div class="phone-screen relative h-full border-10 border-solid border-b-0 rounded-lg rounded-b-none
+                    relatives bg-light mt-auto">
 
             <!-- Smartphone notch -->
-            <div class="notch h-0.5 bg-dark row">
-                <div class="col-3 min-h-2 bg-light rounded-se-sm flex justify-center items-center">
-                    <span data-current-time class="text-sm">00:00</span>
-                </div>
-                <div class="col-6 min-h-2 bg-dark rounded-b-lg"></div>
-                <div class="col-3 min-h-2 bg-light rounded-ss-sm flex justify-center items-center">
-                    <img src="/icons/signal-icon.svg" class="h-0.75" alt="">
-                    <img src="/icons/battery-icon.svg" class="h-0.75 ml-2" alt="">
+            <div class="relative w-full rounded-t-md h-2 overflow-hidden">
+                <div class="notch h-0.5 bg-dark row">
+                    <div class="col-3 min-h-2 bg-light rounded-se-sm flex justify-center items-center">
+                        <span data-current-time class="text-sm">00:00</span>
+                    </div>
+                    <div class="col-6 min-h-2 bg-dark rounded-b-lg"></div>
+                    <div class="col-3 min-h-2 bg-light rounded-ss-sm flex justify-center items-center">
+                        <img src="/icons/signal-icon.svg" class="h-0.75" alt="">
+                        <img src="/icons/battery-icon.svg" class="h-0.75 ml-2" alt="">
+                    </div>
                 </div>
             </div>
+
 
             <!-- Carousel -->
             <div class="px-4 mt-8">
@@ -98,6 +101,29 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Smartphone buttons -->
+            <div class="absolute top-0 left-0 w-full h-half">
+                <div class="relative w-full h-full">
+                    <div class="relative h-half w-full">
+                        <div class="absolute top-half left-0 -translate-x-full w-0.5 h-1.75 flex">
+                            <span class="-translate-x-half w-0.25 h-1.75 bg-dark rounded-l-xs"></span>
+                        </div>
+                    </div>
+
+                    <div class="relative h-half w-full">
+                        <div class="absolute top-half left-0 -translate-y-half -translate-x-full w-0.5 h-7 flex flex-column
+                                    justify-between">
+                            <span class="-translate-x-half w-0.25 h-3 bg-dark rounded-l-xs"></span>
+                            <span class="-translate-x-half w-0.25 h-3 bg-dark rounded-l-xs"></span>
+                        </div>
+
+                        <div class="absolute top-half -translate-y-half translate-x-full right-0 w-0.5 h-6 flex">
+                            <span class="absolute right-0 translate-x-half w-0.25 h-6 bg-dark rounded-r-xs"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -108,5 +134,7 @@
 <style lang="scss">
 .phone-screen {
     width: 340px;
+    height: 440px !important;
+    max-height: 440px !important;
 }
 </style>
