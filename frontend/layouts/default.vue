@@ -1,8 +1,8 @@
 <template>
     <div>
         <!-- Navbar -->
-        <nav class="navbar xl:px-16 lg:px-16 md:px-8 sm:px-3 xs:px-3 border-1 border-gray-300 border-solid
-                    border-x-0 border-t-0">
+        <nav class="navbar xl:px-16 lg:px-16 md:px-8 sm:px-8 xs:px-8 border-2 border-gray-100 dark:border-gray-800
+                    border-solid border-x-0 border-t-0 dark:bg-custom-dark">
             <div>
                 <NuxtLink to="/" class="navbar-brand">
                     <img src="/icons/lumecss-logo.svg" class="mr-2" alt="LumeCSS">
@@ -24,7 +24,8 @@
 
             <div class="hidden md:flex lg:flex xl:flex">
                 <button data-toggle="modal" data-target="#search-box">
-                    <img class="h-1.5 hover:scale-1.1 ease duration-200 text-dark-400" src="/icons/search-icon.svg">
+                    <img class="h-1.5 hover:scale-1.1 ease duration-200 text-dark-400 dark:invert-100"
+                         src="/icons/search-icon.svg">
                 </button>
 
                 <button class="toggle-theme theme-btn ml-3 o-90 scale-0.8"><i class="icon"></i></button>
@@ -32,8 +33,8 @@
                 <hr class="mx-3 h-1.5 divider-vertical">
 
                 <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                    <img class="h-1.5 hover:scale-1.1 ease duration-200 text-dark-400" src="/icons/github-icon.svg"
-                         alt="Github profile">
+                    <img class="h-1.5 hover:scale-1.1 ease duration-200 text-dark-400 dark:invert-100"
+                         src="/icons/github-icon.svg" alt="Github profile">
                 </a>
             </div>
 
@@ -43,7 +44,7 @@
                 <span class="navbar-toggle-line col-10"></span>
             </div>
 
-            <div class="navbar-collapse navbar-collapse-full">
+            <div class="navbar-collapse navbar-collapse-full dark:bg-custom-dark">
                 <ul class="navbar-collapse-menu">
                     <li class="nav-item">
                         <NuxtLink to="/" exact-active-class="text-flame" class="nav-link">Docs</NuxtLink>
@@ -58,7 +59,7 @@
 
                 <div class="mt-3">
                     <a href="https://github.com/NazariyH" target="_blank" rel="noopener noreferrer">
-                        <img class="h-1.5 hover:scale-1.1 ease duration-200 text-dark-400"
+                        <img class="h-1.5 hover:scale-1.1 ease duration-200 text-dark-400 dark:invert-100"
                              src="/icons/github-icon.svg" alt="Github profile">
                     </a>
 
@@ -67,7 +68,7 @@
                     <hr class="divider-vertical mx-4 h-1.5">
 
                     <button data-toggle="modal" data-target="#search-box">
-                        <img class="h-1.5 hover:scale-1.1 ease text-dark-400 duration-200"
+                        <img class="h-1.5 hover:scale-1.1 ease text-dark-400 duration-200 dark:invert-100"
                              src="/icons/search-icon.svg">
                     </button>
                 </div>
@@ -122,6 +123,35 @@
 .bg-dotted {
     background-image: radial-gradient(rgba(193, 193, 193, 0.65) 0.9px, transparent 0.9px);
     background-size: 14px 14px;
+}
+
+body[data-theme="light"],
+body {
+    background-color: white !important;
+
+    .container {
+        background-color: white !important;
+    }
+
+    .bg-light-gray {
+        background-color: #F2F3F3 !important;
+    }
+}
+
+body[data-theme="dark"] {
+    background-color: #030712 !important;
+
+    .container {
+        color: #F8F9FA !important;
+    }
+
+    .bg-light-gray {
+        background-color: #1C202A !important;
+    }
+
+    .dark\:bg-custom-dark {
+        background-color: #030712 !important;
+    }
 }
 
 
