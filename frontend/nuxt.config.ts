@@ -11,13 +11,5 @@ export default defineNuxtConfig({
         { src: '/lumecss.min.js', type: 'text/javascript', defer: true }
       ]
     }
-  },
-  postcss: {
-    plugins: {
-      autoprefixer: {},
-      'postcss-preset-env': {
-        stage: 1,
-      },
-    },
-  },
+  }
 })
