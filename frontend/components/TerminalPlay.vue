@@ -1,9 +1,8 @@
 <template>
-    <div class="bg-dotted bg-dark h-full overflow-hidden rounded-lg border-1 border-solid
-                border-gray-300">
-        <div class="p-4 bg-light">
+    <div class="bg-dotted bg-dark h-full overflow-hidden rounded-lg">
+        <div class="p-4 bg-light dark:bg-custom-dark border-2 border-solid border-gray-100 rounded-lg dark:border-gray-800">
             <!-- Terminal -->
-            <div class="bg-black rounded-sm overflow-hidden">
+            <div class="bg-black dark:bg-light rounded-sm overflow-hidden">
                 <div>
                     <!-- Navigation buttons -->
                     <div class="w-full row items-center py-2">
@@ -16,8 +15,8 @@
                                                 ease duration-200 cursor-pointer"></div>
                         </div>
 
-                        <div class="col-4 text-light text-xs lowercase font-bold flex justify-center">How to
-                            trick a monkey
+                        <div class="col-4 text-light dark:text-dark text-xs lowercase font-bold flex justify-center">
+                            <span>How to trick a monkey</span>
                         </div>
                     </div>
 
@@ -31,7 +30,7 @@
                 </div>
             </div>
 
-            <p class="mt-4 text-sm lh-lg text-gray-600">
+            <p class="mt-4 text-sm lh-lg text-gray-600 dark:text-gray-100">
                 Built with love (and too much coffee), <strong>Lume<span
                 class="text-flame">CSS</span></strong> takes cues from <strong>Bootstrap</strong> and
                 <strong>TailwindCSS</strong> - but with a spicy twist. No more dull stylesheets or margin
@@ -41,7 +40,7 @@
 
             <!-- Troll button -->
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" v-if="showTrollButton"
-               class="btn-xs btn-outline-dark mt-4 @slideInFadeUp">Do Not Click 🤫</a>
+               class="btn-xs btn-outline-dark mt-4 dark:btn-outline-light @slideInFadeUp">Do Not Click 🤫</a>
         </div>
     </div>
 </template>

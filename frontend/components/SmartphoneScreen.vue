@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full h-full bg-dotted rounded-lg min-h-20 flex justify-center pt-4 bg-gray-100 attachment-fixed
-                border-1 border-solid border-gray-300 overflow-hidden">
+    <div class="w-full h-full bg-dotted rounded-lg min-h-20 flex justify-center pt-4 bg-light-gray attachment-fixed
+                border-2 border-solid border-gray-100 overflow-hidden dark:border-gray-800">
         <!-- Smartphone screen -->
         <div class="phone-screen relative h-full border-10 border-solid border-b-0 rounded-lg rounded-b-none
                     relatives bg-light mt-auto">

@@ -1,15 +1,14 @@
 <template>
-    <div class="border-1 border-solid border-gray-300 rounded-lg bg-light h-full p-4">
-        <div class="p-8 pb-6">
-            <div class="flex items-start">
-                <img class="h-5 mr-8 o-80" src="/icons/color-palette-icon.svg" alt="">
+    <div class="border-2 border-solid border-gray-100 dark:border-gray-800 rounded-lg bg-light dark:bg-custom-dark h-full p-4">
+        <div class="md:p-8 lg:p-8 xl:p-8 pb-6">
+            <div class="flex items-start dark:text-light xs:flex-column sm:flex-column w-full">
+                <img class="h-5 mr-8 o-80 dark:invert-100" src="/icons/color-palette-icon.svg" alt="">
 
-                <div>
+                <div class="xs:mt-2 sm:mt-2">
                     <h2>Color Magic</h2>
-                    <p class="mt-2 text-sm lh-lg text-gray-600">
+                    <p class="mt-2 text-sm lh-lg text-gray-600 dark:text-gray-100">
                         <strong>Lume<span class="text-flame">CSS</span></strong> makes color styling easy
-                        with simple
-                        classes, letting you apply vibrant, customizable hues effortlessly.
+                        with simple classes, letting you apply vibrant, customizable hues effortlessly.
                     </p>
                 </div>
             </div>
@@ -17,8 +16,8 @@
 
         <!-- Color palette-->
         <div class="flex justify-center">
-            <div class="bg-dotted border-1 border-solid border-gray-300 rounded-sm pl-4 pt-4 attachment-fixed
-                                    rounded-md text-gray-600 w-full color-palette overflow-hidden">
+            <div class="bg-dotted rounded-sm pl-4 pt-4 attachment-fixed rounded-md text-gray-600 w-full color-palette
+                        overflow-hidden dark:text-light bg-light-gray">
                 <div class="overflow-hidden" ref="colorPalette">
                     <div class="flex items-center text-sm mt-2">
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 mr-1"></div>

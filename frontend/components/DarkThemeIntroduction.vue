@@ -1,12 +1,13 @@
 <template>
-    <div class="p-4 bg-light border-1 border-solid border-gray-300 rounded-lg mb-2 select-none">
-        <div class="p-8 pb-6">
-            <div class="flex items-start">
-                <img class="h-5 mr-8 o-80" src="/icons/dark-theme-icon.svg" alt="">
+    <div class="p-4 bg-light dark:bg-custom-dark border-2 border-solid border-gray-100 rounded-lg select-none h-full
+                dark:border-gray-800">
+        <div class="md:p-8 lg:p-8 xl:p-8 pb-6">
+            <div class="flex items-start xs:flex-column sm:flex-column w-full">
+                <img class="h-5 mr-8 o-80 dark:invert-100" src="/icons/dark-theme-icon.svg" alt="">
 
-                <div>
+                <div class="xs:mt-2 sm:mt-2 dark:text-light">
                     <h2>Light Design for Dark Interfaces</h2>
-                    <p class="mt-2 text-sm lh-lg text-gray-600">
+                    <p class="mt-2 text-sm lh-lg text-gray-600 dark:text-gray-100">
                         <strong>Lume<span class="text-flame">CSS</span></strong> is a sleek, modern CSS library built
                         for intuitive theming and effortless dark mode. Customize faster, code cleaner, and let your
                         interface shine-day or night.
@@ -15,7 +16,7 @@
             </div>
         </div>
 
-        <div class="bg-dotted bg-gray-100 rounded-lg pt-8 xl:px-20 lg:px-20 md:px-16 sm:px-6 xs:px-2 flex
+        <div class="bg-dotted bg-light-gray rounded-lg pt-8 xl:px-20 lg:px-20 md:px-16 sm:px-6 xs:px-2 flex
             justify-center">
             <div class="relative w-full h-30" ref="wrapper">
                 <div class="absolute top-0 left-half -translate-x-half w-0.5 h-full bg-flame z-3 cursor-ew-resize"

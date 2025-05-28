@@ -1,12 +1,13 @@
 <template>
-    <div class="bg-dark bg-dotted rounded-lg xs:mt-2 sm:mt-2 md:mt-2 p-4">
-        <div class="rounded-lg bg-light p-4 border-1 border-solid border-gray-300">
-            <div class="flex items-start p-8 pb-6">
-                <img class="h-5 mr-8 o-80" src="/icons/box-icon.svg" alt="">
+    <div class="bg-light-gray bg-dotted rounded-lg xs:mt-2 sm:mt-2 md:mt-2 p-4 border-2 border-solid border-gray-100
+                dark:border-gray-800">
+        <div class="rounded-lg bg-light dark:bg-custom-dark p-4 border-2 border-solid border-gray-100 dark:border-gray-800">
+            <div class="flex items-start md:p-8 lg:p-8 xl:p-8 pb-6 sm:flex-column xs:flex-column w-full">
+                <img class="h-5 mr-8 o-80 dark:invert-100" src="/icons/box-icon.svg" alt="">
 
-                <div>
+                <div class="xs:mt-2 sm:mt-2 dark:text-light">
                     <h2>Install via package manager</h2>
-                    <p class="mt-2 text-sm text-gray-600 lh-lg">
+                    <p class="mt-2 text-sm text-gray-600 lh-lg dark:text-gray-100">
                         Install via your favorite package manager with a single command. Stay up to date and
                         get started quickly!
                     </p>
@@ -25,7 +26,7 @@
                 </div>
             </div>
 
-            <p class="text-sm lh-lg text-gray-600 my-4">
+            <p class="text-sm lh-lg text-gray-600 my-4 dark:text-gray-100">
                 To get started with <strong>Lume<span class="text-flame">CSS</span></strong>, simply install
                 it via your preferred package manager. Once added to your project, you can import and use
                 its clean, customizable styles right away.
@@ -43,7 +44,7 @@
                 </div>
             </div>
 
-            <p class="text-sm lh-lg text-gray-600 my-4">
+            <p class="text-sm lh-lg text-gray-600 my-4 dark:text-gray-100">
                 You can purge unused styles and generate compiled <strong>lumecss.min.css</strong> and
                 <strong>lumecss.min.js</strong> files to any directory by specifying a custom output path
                 during the build process. This helps keep your assets clean and organized for deployment.
@@ -107,7 +108,7 @@
                 <div class="carousel-indicators"></div>
             </div>
 
-            <p class="text-sm lh-lg text-gray-600 mt-4">
+            <p class="text-sm lh-lg text-gray-600 mt-4 dark:text-gray-100">
                 Depending on the framework you're using, the way you import <strong>Lume<span
                 class="text-flame">CSS</span></strong> may vary. Use the slider above to find the
                 appropriate setup for your platform, whether it's Nuxt, Vue, React, or Angular. Each snippet
