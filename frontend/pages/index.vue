@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper bg-diagonal border-2 border-y-0 border-gray-100 border-solid px-4 dark:border-gray-800">
+    <div class="wrapper bg-diagonal border-2 border-y-0 border-gray-100 border-solid  dark:border-gray-800">
         <div class="container bg-light justify-between row p-0 border-2 border-y-0 border-solid border-gray-100 pt-10
                     dark:bg-custom-dark dark:text-light dark:border-gray-800">
             <!-- Introduction -->
