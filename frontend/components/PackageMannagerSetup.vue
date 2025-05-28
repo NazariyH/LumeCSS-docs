@@ -56,49 +56,68 @@
 
                 <div>
                     <div class="carousel-inner bg-dark bg-dotted text-sm">
+                        <!-- For React -->
                         <div class="carousel-item bg-dark px-0 pt-0">
-                            <div class="bg-dark rounded-sm my-4 flex justify-between items-start pt-2 pb-4 pl-2 pr-4">
-                                <div class="flex flex-column overflow-x-scroll">
-                                    <span class="pb-2 o-70">postcss.config.cjs (create in the root directory)</span>
+                            <div class="bg-dark rounded-sm flex justify-between items-start pt-2 pb-4 pl-2 pr-0 w-full">
+                                <div class="flex flex-column overflow-x-scroll w-full">
+                                    <div class="flex justify-between w-full">
+                                        <span class="pb-2 o-70">index.js or main.jsx</span>
+
+                                        <img class="h-1 cursor-pointer icon-white" src="/icons/clipboard-icon.svg"
+                                             @click="copyToClipboard($event, linkLumecssForReact)" alt="copy">
+                                    </div>
                                     <pre class="bg-transparent py-0 my-0 pl-2"><code
-                                        class="language-javascript">{{ purgeCSSCode }}</code></pre>
-                                </div>
-                                <div class="ml-4 mt-2">
-                                    <img class="h-1 cursor-pointer icon-white"
-                                         src="/icons/clipboard-icon.svg"
-                                         @click="copyToClipboard($event, purgeCSSCode)" alt="copy">
+                                        class="language-javascript">{{ linkLumecssForReact }}</code></pre>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- For Angular -->
                         <div class="carousel-item bg-dark px-0 pt-0">
-                            <div
-                                class="bg-dark rounded-sm my-4 flex justify-between items-start pt-2 pb-4 pl-2 pr-4">
-                                <div class="flex flex-column overflow-x-scroll">
-                                    <span class="pb-2 o-70">postcss.config.cjs (create in the root directory)</span>
+                            <div class="bg-dark rounded-sm flex justify-between items-start pt-2 pb-4 pl-2 pr-0 w-full">
+                                <div class="flex flex-column overflow-x-scroll w-full">
+                                    <div class="flex justify-between w-full">
+                                        <span class="pb-2 o-70">angular.json</span>
+
+                                        <img class="h-1 cursor-pointer icon-white"
+                                             src="/icons/clipboard-icon.svg"
+                                             @click="copyToClipboard($event, linkLumecssForAngular)" alt="copy">
+                                    </div>
                                     <pre class="bg-transparent py-0 my-0 pl-2"><code
-                                        class="language-javascript">{{ purgeCSSCode }}</code></pre>
-                                </div>
-                                <div class="ml-4 mt-2">
-                                    <img class="h-1 cursor-pointer icon-white"
-                                         src="/icons/clipboard-icon.svg"
-                                         @click="copyToClipboard($event, purgeCSSCode)" alt="copy">
+                                        class="language-javascript">{{ linkLumecssForAngular }}</code></pre>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- For Vue -->
                         <div class="carousel-item bg-dark px-0 pt-0">
-                            <div
-                                class="bg-dark rounded-sm my-4 flex justify-between items-start pt-2 pb-4 pl-2 pr-4">
-                                <div class="flex flex-column overflow-x-scroll">
-                                    <span class="pb-2 o-70">postcss.config.cjs (create in the root directory)</span>
+                            <div class="bg-dark rounded-sm flex justify-between items-start pt-2 pb-4 pl-2 pr-0 w-full">
+                                <div class="flex flex-column overflow-x-scroll w-full">
+                                    <div class="flex justify-between w-full">
+                                        <span class="pb-2 o-70">main.js</span>
+
+                                        <img class="h-1 cursor-pointer icon-white" src="/icons/clipboard-icon.svg"
+                                             @click="copyToClipboard($event, linkLumecssForVue)" alt="copy">
+                                    </div>
                                     <pre class="bg-transparent py-0 my-0 pl-2"><code
-                                        class="language-javascript">{{ purgeCSSCode }}</code></pre>
+                                        class="language-javascript">{{ linkLumecssForVue }}</code></pre>
                                 </div>
-                                <div class="ml-4 mt-2">
-                                    <img class="h-1 cursor-pointer icon-white"
-                                         src="/icons/clipboard-icon.svg"
-                                         @click="copyToClipboard($event, purgeCSSCode)" alt="copy">
+                            </div>
+                        </div>
+
+                        <!-- For Nuxt -->
+                        <div class="carousel-item bg-dark px-0 pt-0">
+                            <div class="bg-dark rounded-sm flex justify-between items-start pt-2 pb-4 pl-2 pr-0 w-full">
+                                <div class="flex flex-column overflow-x-scroll w-full">
+                                    <div class="flex justify-between w-full">
+                                        <span class="pb-2 o-70">nuxt.config.ts</span>
+
+                                        <img class="h-1 cursor-pointer icon-white"
+                                             src="/icons/clipboard-icon.svg"
+                                             @click="copyToClipboard($event, linkLumecssForNuxt)" alt="copy">
+                                    </div>
+                                    <pre class="bg-transparent py-0 my-0 pl-2"><code
+                                        class="language-javascript">{{ linkLumecssForNuxt }}</code></pre>
                                 </div>
                             </div>
                         </div>
@@ -126,11 +145,55 @@ const { copyToClipboard } = useClipboard(); // Import the copy to clipboard func
 // Installation via npm Command
 const installViaNpmCommand = ref('$ npm install lumecss')
 
-// Build lumecss command
-const purgeCSSCode = ref('not awailable')
-
 // Command for building LumeCSS
 const buildLumecssCommand = ref('npx lumecss lumecss:build --output ./path')
+
+// Commands for linking LumeCSS for different platforms
+const linkLumecssForNuxt = ref(`
+export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [
+        { rel: 'stylesheet', href: '/path/lumecss.min.css' }
+      ],
+      script: [
+        { src: '/path/lumecss.min.js', type: 'text/javascript', defer: true }
+      ]
+    }
+  }
+})`)
+
+const linkLumecssForVue = ref(`
+import { createApp } from 'vue'
+import App from './App.vue'
+
+// Import LumeCSS
+import '/path/lumecss.min.css'
+import '/path/lumecss.min.js'
+
+createApp(App).mount('#app')`)
+
+const linkLumecssForReact = ref(`
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+
+// Import LumeCSS
+import '/path/lumecss.min.css'
+import '/path/lumecss.min.js'
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />)`)
+
+
+const linkLumecssForAngular = ref(`
+"styles": [
+  "src/lumecss.min.css"
+],
+"scripts": [
+  "src/lumecss.min.js"
+]`)
+
+
 </script>
 
 <style lang="scss">
@@ -160,7 +223,7 @@ const buildLumecssCommand = ref('npx lumecss lumecss:build --output ./path')
             justify-content: center;
             align-items: center;
 
-            background-color: black;
+            background-color: #212529;
             border-right: 0.05rem solid #F8F9FA;
             transition: all 300ms ease-in-out;
             width: 100%;
@@ -172,13 +235,48 @@ const buildLumecssCommand = ref('npx lumecss lumecss:build --output ./path')
             }
 
             &::before {
-                content: 'Nuxt';
                 color: white;
                 display: inline-block;
             }
 
-            &.active {
-                background-color: #41b883;
+            // React
+            &:nth-child(1) {
+                &::before {
+                    content: 'React';
+                }
+                &.active {
+                    background-color: #61dafb;
+                }
+            }
+
+            // Angular
+            &:nth-child(2) {
+                &::before {
+                    content: 'Angular';
+                }
+                &.active {
+                    background-color: #dd0031;
+                }
+            }
+
+            // Vue
+            &:nth-child(3) {
+                &::before {
+                    content: 'Vue';
+                }
+                &.active {
+                    background-color: #42b883;
+                }
+            }
+
+            // Nuxt
+            &:nth-child(4) {
+                &::before {
+                    content: 'Nuxt';
+                }
+                &.active {
+                    background-color: #00c58e;
+                }
             }
         }
     }
