@@ -16,33 +16,37 @@
         </div>
 
         <div class="bg-dotted bg-light-gray rounded-lg p-4 flex items-center justify-center h-full overflow-hidden">
-            <div class="carousel carousel-slide max-w-20 w-full h-20 relative overflow-visible" data-carousel-move-interval="3000">
-                <div class="carousel-inner duration-300">
-                    <div class="carousel-item relative">
+            <div class="carousel carousel-slide max-w-20 w-full h-25 relative overflow-visible" data-carousel-move-interval="3000">
+                <div class="carousel-inner duration-300 text-sm">
+                    <div class="carousel-item relative flex flex-column items-center">
+                        <span class="text-dark dark:text-light -translate-y-2">backdrop-blur-sm</span>
                         <div class="max-w-18 w-full h-18 absolute top-half left-half -translate-x-half -translate-y-half border-1
                                     border-gray-300 border-solid z-1">
-                            <div class="bg-dark trans-20-bg backdrop-blur-xs absolute top-half left-half -translate-x-half
+                            <div class="bg-transparent backdrop-blur-sm absolute top-half left-half -translate-x-half
                                         -translate-y-half z-1 w-15 w-full h-15"></div>
                         </div>
                     </div>
-                    <div class="carousel-item relative">
+                    <div class="carousel-item relative flex flex-column items-center">
+                        <span class="text-dark dark:text-light -translate-y-2">backdrop-sepia-80</span>
                         <div class="max-w-18 w-full h-18 absolute top-half left-half -translate-x-half -translate-y-half border-1
                                     border-gray-300 border-solid z-1">
-                            <div class="bg-dark trans-20-bg backdrop-sepia-80 absolute top-half left-half -translate-x-half
+                            <div class="bg-transparent backdrop-sepia-80 absolute top-half left-half -translate-x-half
                                         -translate-y-half z-1 max-w-15 w-full h-15"></div>
                         </div>
                     </div>
-                    <div class="carousel-item relative">
+                    <div class="carousel-item relative flex flex-column items-center">
+                        <span class="text-dark dark:text-light -translate-y-2">backdrop-brightness-200</span>
                         <div class="max-w-18 w-full h-18 absolute top-half left-half -translate-x-half -translate-y-half border-1
                                     border-gray-300 border-solid z-1">
-                            <div class="bg-dark trans-20-bg backdrop-hue-rotate-45 absolute top-half left-half -translate-x-half
+                            <div class="bg-transparent backdrop-brightness-200 absolute top-half left-half -translate-x-half
                                         -translate-y-half z-1 max-w-15 w-full h-15"></div>
                         </div>
                     </div>
-                    <div class="carousel-item relative">
+                    <div class="carousel-item relative flex flex-column items-center">
+                        <span class="text-dark dark:text-light -translate-y-2">backdrop-invert-100</span>
                         <div class="max-w-18 w-full h-18 absolute top-half left-half -translate-x-half -translate-y-half border-1
                                     border-gray-300 border-solid z-1">
-                            <div class="bg-dark trans-20-bg backdrop-invert-100 absolute top-half left-half -translate-x-half
+                            <div class="bg-transparent backdrop-invert-100 absolute top-half left-half -translate-x-half
                                         -translate-y-half z-1 max-w-15 w-full h-15"></div>
                         </div>
                     </div>
