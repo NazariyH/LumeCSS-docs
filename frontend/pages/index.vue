@@ -1,6 +1,6 @@
 <template>
-    <div class="wrapper bg-diagonal border-2 border-y-0 border-gray-100 border-solid  dark:border-gray-800">
-        <div class="container bg-light justify-between row p-0 border-2 border-y-0 border-solid border-gray-100 pt-10
+    <div class="wrapper bg-diagonal border-1 border-y-0 border-gray-100 border-solid  dark:border-gray-800 relative">
+        <div class="container bg-light justify-between row p-0 border-1 border-y-0 border-solid border-gray-100 pt-10
                     dark:bg-custom-dark dark:text-light dark:border-gray-800">
             <!-- Introduction -->
             <div class="col-12-xs col-12-sm col-12-md col-7-lg col-8-xl px-8 py-4">
@@ -18,10 +18,14 @@
                                 translate-y-2 border-gray-200 dark:border-gray-800"></div>
                 </div>
 
-
                 <div class="mt-12">
                     <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
                                 -translate-y-1 border-gray-200 dark:border-gray-800"></div>
+
+                    <span class="decorative-text absolute left-0 uppercase text-xs text-info -rotate-90 font-medium
+                                 ls-xs lg:hidden md:hidden sm:hidden xs:hidden">
+                        Why&nbsp;&nbsp;LumeCSS?
+                    </span>
                 </div>
 
                 <div class="row">
@@ -65,7 +69,7 @@
             <div class="col-12-xs col-12-sm col-12-md col-6-lg col-6-xl overflow-hidden md:mb-2 sm:mb-2
                         xs:mb-2 lg:pl-1 xl:pl-1">
 
-                <ColorPaletteIntroduction />
+                <ColorPaletteIntroduction/>
             </div>
         </div>
 
@@ -75,12 +79,12 @@
             <div class="col-12-xs col-12-sm col-12-md col-6-lg col-6-xl bg-light-gray overflow-hidden
                         xl:rounded-se-lg lg:pr-1 xl:pr-1">
 
-                <CdnSetup />
+                <CdnSetup/>
             </div>
 
             <!-- Integration via package manager -->
             <div class="col-12-xs col-12-sm col-12-md col-6-lg col-6-xl bg-light-gray lg:pl-1 xl:pl-1">
-                <PackageMannagerSetup />
+                <PackageMannagerSetup/>
             </div>
         </div>
 
@@ -89,13 +93,13 @@
                     justify-between dark:border-gray-800">
             <!-- Dark theme introduction -->
             <div class="col-12-xs col-12-sm col-12-md col-7-lg col-7-xl bg-light-gray lg:pr-1 xl:pr-1 mb-2">
-                <DarkThemeIntroduction />
+                <DarkThemeIntroduction/>
             </div>
 
 
             <!-- 2D transforms -->
             <div class="col-12-xs col-12-sm col-12-md col-5-lg col-5-xl bg-light-gray lg:pl-1 xl:pl-1 flex mb-2">
-                <TransformIntroduction />
+                <TransformIntroduction/>
             </div>
         </div>
 
@@ -103,13 +107,69 @@
                     dark:border-gray-800">
             <!-- Dark theme introduction -->
             <div class="col-12-xs col-12-sm col-12-md col-5-lg col-5-xl bg-light-gray lg:pr-1 xl:pr-1 mb-2">
-                <GridIntroduction />
+                <GridIntroduction/>
             </div>
 
             <!-- Photo filter introduction -->
             <div class="col-12-xs col-12-sm col-12-md col-7-lg col-7-xl bg-light-gray lg:pl-1 xl:pl-1 flex mb-2">
-                <PhotoFilterIntroduction />
+                <PhotoFilterIntroduction/>
             </div>
+        </div>
+
+        <div class="container bg-light dark:bg-custom-dark border-2 border-y-0 border-solid border-gray-100
+                    dark:border-gray-800 dark:text-light p-4 pt-10 pb-6">
+            <div>
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                -translate-y-2 border-gray-200 dark:border-gray-800"></div>
+            </div>
+
+            <h1 class="tex-2xl font-medium lh-none">
+                Built for Performance
+            </h1>
+
+            <div>
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                translate-y-2 border-gray-200 dark:border-gray-800"></div>
+            </div>
+
+            <div class="mt-8">
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                -translate-y-1 border-gray-200 dark:border-gray-800"></div>
+
+                <span class="decorative-text absolute left-0 uppercase text-xs text-magenta -rotate-90 font-medium
+                                 ls-xs lg:hidden md:hidden sm:hidden xs:hidden">
+                        How&nbsp;&nbsp;it&nbsp;&nbsp;works
+                    </span>
+            </div>
+
+            <div>
+                <p class="text-md lh-lg text-gray-600 dark:text-gray-100 max-w-45">
+                    <strong>Lume<span class="text-flame">CSS</span></strong> scans your project files and automatically
+                    removes unused styles, keeping your final CSS bundle as lean and fast as possible. Write with full
+                    flexibility during development, then ship only what you need.
+                </p>
+            </div>
+
+            <div>
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                translate-y-1 border-gray-200 dark:border-gray-800"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                        border-gray-200 dark:border-gray-800"></div>
+        </div>
+
+        <div class="container bg-light-gray border-2 border-y-0 border-solid border-gray-100
+                    dark:border-gray-800 dark:text-light p-2">
+            <!-- Playing terminal -->
+            <PurgeDemoTerminal/>
+        </div>
+
+        <div>
+            <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                            translate-y-1 border-gray-200 dark:border-gray-800"></div>
         </div>
     </div>
 </template>
@@ -122,11 +182,12 @@ import ColorPaletteIntroduction from "../components/ColorPaletteIntroduction.vue
 import CdnSetup from "../components/CdnSetup.vue"
 import PackageMannagerSetup from "../components/PackageMannagerSetup.vue"
 import DarkThemeIntroduction from "../components/DarkThemeIntroduction.vue"
-import TransformIntroduction from "../components/TransformIntroduction.vue";
-import GridIntroduction from "../components/GridIntroduction.vue";
-import PhotoFilterIntroduction from "../components/PhotoFilterIntroduction.vue";
+import TransformIntroduction from "../components/TransformIntroduction.vue"
+import GridIntroduction from "../components/GridIntroduction.vue"
+import PhotoFilterIntroduction from "../components/PhotoFilterIntroduction.vue"
+import PurgeDemoTerminal from "../components/PurgeDemoTerminal.vue"
 
-const { copyToClipboard } = useClipboard(); // Import the copy to clipboard function
+const {copyToClipboard} = useClipboard() // Import the copy to clipboard function
 </script>
 
 <style lang="scss">
@@ -134,5 +195,9 @@ const { copyToClipboard } = useClipboard(); // Import the copy to clipboard func
     width: 100%;
     max-width: 1500px;
     margin: auto;
+}
+
+.decorative-text {
+    translate: -60%;
 }
 </style>
