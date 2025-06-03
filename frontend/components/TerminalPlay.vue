@@ -6,7 +6,7 @@
                 <div>
                     <!-- Navigation buttons -->
                     <div class="w-full row items-center py-2">
-                        <div class="col-4 pl-6 flex">
+                        <div class="col-4 pl-4 flex">
                             <div class="w-0.75 h-0.75 mr-2 rounded-full bg-red-500 hover:bg-red-300
                                                 ease duration-200 cursor-pointer"></div>
                             <div class="w-0.75 h-0.75 mr-2 rounded-full bg-orange-500 hover:bg-orange-300
