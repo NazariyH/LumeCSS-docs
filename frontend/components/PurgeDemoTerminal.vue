@@ -130,12 +130,12 @@ const classesToInsert = [`
 
 // Terminal messages that simulate LumeCSS output logs
 const terminalCommands = [
-    '> LumeCSS build: 0.002s',
-    '> LumeCSS build: 0.002s',
-    '> LumeCSS build: 0.004s',
-    '> LumeCSS build: 0.005s',
-    '> LumeCSS build: 0.007s',
-    '> LumeCSS build: 0.007s'
+    '> LumeCSS build: 0.02s',
+    '> LumeCSS build: 0.02s',
+    '> LumeCSS build: 0.04s',
+    '> LumeCSS build: 0.05s',
+    '> LumeCSS build: 0.07s',
+    '> LumeCSS build: 0.07s'
 ]
 
 // HTML string that represents the contents of the index.html block
