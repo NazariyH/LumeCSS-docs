@@ -193,7 +193,7 @@ const {copyToClipboard} = useClipboard() // Import the copy to clipboard functio
 <style lang="scss">
 .wrapper {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
 }
 
