@@ -113,9 +113,9 @@
     background-image: repeating-linear-gradient(
             -45deg, /* Diagonal direction */
             rgba(193, 193, 193, 0.35) 0px, /* Line color and start */
-            rgba(193, 193, 193, 0.35) 0.5px, /* Line thickness */
-            transparent 2px, /* Background color starts */
-            transparent 9.5px /* Distance between lines */
+            rgba(193, 193, 193, 0.35) 0.3px, /* Line thickness */
+            transparent 1.5px, /* Background color starts */
+            transparent 7px /* Distance between lines */
     );
     background-size: cover;
 }
