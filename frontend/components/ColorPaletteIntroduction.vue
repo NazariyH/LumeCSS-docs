@@ -84,7 +84,7 @@
                             class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 -translate-y-3 mr-1 relative flex items-center justify-center">
                             <div
                                 class="border-1 border-solid border-gray-200 border-x-0 border-t-0 -rotate-45 pl-5 pr-10 pb-2">
-                                cyan
+                                brown
                             </div>
                         </div>
 
@@ -92,7 +92,7 @@
                             class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 -translate-y-3 mr-1 relative flex items-center justify-center">
                             <div
                                 class="border-1 border-solid border-gray-200 border-x-0 border-t-0 -rotate-45 pl-5 pr-10 pb-2">
-                                teal
+                                black
                             </div>
                         </div>
 
@@ -100,15 +100,7 @@
                             class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 -translate-y-3 mr-1 relative flex items-center justify-center">
                             <div
                                 class="border-1 border-solid border-gray-200 border-x-0 border-t-0 -rotate-45 pl-5 pr-10 pb-2">
-                                mint
-                            </div>
-                        </div>
-
-                        <div
-                            class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 -translate-y-2 relative flex items-center justify-center">
-                            <div
-                                class="border-1 border-solid border-gray-200 border-x-0 border-t-0 -rotate-45 pl-5 pr-10 pb-2">
-                                plum
+                                white
                             </div>
                         </div>
                     </div>
@@ -132,13 +124,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="bottom"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-pink-900 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="bottom"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-cyan-900 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-brown-900 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="bottom"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-teal-900 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-black-900 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="bottom"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-mint-900 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="bottom"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-plum-900 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-white-900 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="bottom"></div>
                     </div>
                     <div class="flex items-center mb-1">
@@ -161,13 +151,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-pink-800 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-cyan-800 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-brown-800 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-teal-800 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-black-800 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-mint-800 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-plum-800 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-white-800 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                     </div>
                     <div class="flex items-center mb-1">
@@ -190,13 +178,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-pink-700 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-cyan-700 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-brown-700 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-teal-700 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-black-700 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-mint-700 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-plum-700 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-white-700 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                     </div>
                     <div class="flex items-center mb-1">
@@ -219,13 +205,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 duration-200 bg-pink-600 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 duration-200 bg-cyan-600 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 duration-200 bg-brown-600 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 duration-200 bg-teal-600 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 duration-200 bg-black-600 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 duration-200 bg-mint-600 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 duration-200 bg-plum-600 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 duration-200 bg-white-600 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                     </div>
                     <div class="flex items-center mb-1">
@@ -248,13 +232,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-pink-500 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-cyan-500 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-brown-500 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-teal-500 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-black-500 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-mint-500 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-plum-500 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-white-500 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                     </div>
                     <div class="flex items-center mb-1">
@@ -277,13 +259,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-pink-400 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-cyan-400 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-brown-400 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-teal-400 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-black-400 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-mint-400 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-plum-400 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-white-400 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                     </div>
                     <div class="flex items-center mb-1">
@@ -306,13 +286,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-pink-300 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-cyan-300 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-brown-300 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-teal-300 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-black-300 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-mint-300 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-plum-300 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-white-300 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                     </div>
                     <div class="flex items-center mb-1">
@@ -335,13 +313,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-pink-200 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-cyan-200 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-brown-200 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-teal-200 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-black-200 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-mint-200 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-plum-200 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-white-200 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                     </div>
                     <div class="flex items-center mb-1">
@@ -364,13 +340,11 @@
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                         <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-pink-100 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-cyan-100 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-brown-100 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-teal-100 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-black-100 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-mint-100 mr-1"
-                             data-tooltip="tooltip" data-tooltip-placement="top"></div>
-                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-plum-100 mr-1"
+                        <div class="max-w-4 max-h-2.5 min-w-4 min-h-2.5 bg-white-100 mr-1"
                              data-tooltip="tooltip" data-tooltip-placement="top"></div>
                     </div>
                 </div>
