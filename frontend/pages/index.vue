@@ -4,6 +4,10 @@
                     dark:bg-custom-dark dark:text-light dark:border-gray-800">
             <!-- Introduction -->
             <div class="col-12-xs col-12-sm col-12-md col-7-lg col-8-xl px-8 py-4">
+                <span class="horizontal-decorative-text uppercase text-xs text-info font-medium ls-xs mb-2 block">
+                    Why&nbsp;&nbsp;LumeCSS?
+                </span>
+
                 <div>
                     <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
                                 -translate-y-2 border-gray-200 dark:border-gray-800"></div>
@@ -117,7 +121,12 @@
         </div>
 
         <div class="container bg-light dark:bg-custom-dark border-2 border-y-0 border-solid border-gray-100
-                    dark:border-gray-800 dark:text-light p-4 pt-10 pb-6">
+                    dark:border-gray-800 dark:text-light p-4 pt-40 pb-20">
+
+            <span class="horizontal-decorative-text uppercase text-xs text-magenta font-medium ls-xs mb-2 block">
+                How&nbsp;&nbsp;it&nbsp;&nbsp;works
+            </span>
+
             <div>
                 <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
                                 -translate-y-2 border-gray-200 dark:border-gray-800"></div>
@@ -156,20 +165,67 @@
             </div>
         </div>
 
-        <div>
-            <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
-                        border-gray-200 dark:border-gray-800"></div>
-        </div>
-
         <div class="container bg-light-gray border-2 border-y-0 border-solid border-gray-100
-                    dark:border-gray-800 dark:text-light p-2">
+                    dark:border-gray-800 dark:text-light px-2">
+            <div>
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                        border-gray-200 dark:border-gray-800"></div>
+            </div>
+
             <!-- Playing terminal -->
-            <PurgeDemoTerminal/>
+            <div class="py-2">
+                <PurgeDemoTerminal/>
+            </div>
+
+            <div>
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                        border-gray-200 dark:border-gray-800"></div>
+            </div>
         </div>
 
-        <div>
-            <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
-                            translate-y-1 border-gray-200 dark:border-gray-800"></div>
+        <div class="container bg-light dark:bg-custom-dark border-2 border-y-0 border-solid border-gray-100
+                    dark:border-gray-800 dark:text-light p-4 pt-40 pb-20">
+
+            <span class="horizontal-decorative-text uppercase text-xs text-gold font-medium ls-xs mb-2 block">
+                Built&nbsp;&nbsp;to&nbsp;&nbsp;Inspire
+            </span>
+
+            <div>
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                -translate-y-2 border-gray-200 dark:border-gray-800"></div>
+            </div>
+
+            <h1 class="tex-2xl font-medium lh-none">
+                Crafted for Creators, Made <br> with Heart
+            </h1>
+
+            <div>
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                translate-y-2 border-gray-200 dark:border-gray-800"></div>
+            </div>
+
+            <div class="mt-8">
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                -translate-y-1 border-gray-200 dark:border-gray-800"></div>
+
+                <span class="decorative-text absolute left-0 uppercase text-xs text-gold -rotate-90 font-medium
+                                 ls-xs lg:hidden md:hidden sm:hidden xs:hidden">
+                    Built&nbsp;&nbsp;to&nbsp;&nbsp;Inspire
+                </span>
+            </div>
+
+            <div>
+                <p class="text-md lh-lg text-gray-600 dark:text-gray-100 max-w-45">
+                    At <strong>Lume<span class="text-flame">CSS</span></strong>, we believe great design starts with a
+                    solid foundation. Every line of code is optimized to empower your creativity — delivering
+                    flexibility and clarity, so you can build without limits.
+                </p>
+            </div>
+
+            <div>
+                <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                translate-y-1 border-gray-200 dark:border-gray-800"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -199,5 +255,11 @@ const {copyToClipboard} = useClipboard() // Import the copy to clipboard functio
 
 .decorative-text {
     translate: -60%;
+}
+
+@media (min-width: 1600px) {
+    .horizontal-decorative-text {
+        display: none !important;
+    }
 }
 </style>
