@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Navbar -->
-        <nav class="navbar xl:px-16 lg:px-16 md:px-8 sm:px-8 xs:px-8 border-2 border-gray-100 dark:border-gray-800
+        <nav class="navbar xl:px-16 lg:px-16 md:px-8 sm:px-8 xs:px-8 border-1 border-gray-100 dark:border-gray-800
                     border-solid border-x-0 border-t-0 dark:bg-custom-dark">
             <div>
                 <NuxtLink to="/" class="navbar-brand">
@@ -96,6 +96,10 @@
         </div>
 
 
+        <!-- Cursor circles container -->
+        <AnimatedCursor />
+
+
         <!-- Output the page content -->
         <div>
             <slot/>
@@ -103,11 +107,13 @@
     </div>
 </template>
 
+
 <script setup lang="ts">
+import AnimatedCursor from "../components/AnimatedCursor.vue";
 </script>
 
-<style lang="scss">
 
+<style lang="scss">
 // Diagonal background styles
 .bg-diagonal {
     background-image: repeating-linear-gradient(
