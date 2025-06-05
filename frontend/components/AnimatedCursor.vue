@@ -184,6 +184,8 @@ function animateCircles() {
 .cursor-circle {
     position: absolute;
     display: block;
+    width: 24px;
+    height: 24px;
 
     svg {
         display: none;
@@ -229,8 +231,6 @@ function animateCircles() {
 }
 
 span.cursor-circle {
-    width: 24px;
-    height: 24px;
     border-radius: 100%;
     background-color: #fff;
 
