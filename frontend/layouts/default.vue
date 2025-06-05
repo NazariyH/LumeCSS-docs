@@ -97,13 +97,105 @@
 
 
         <!-- Cursor circles container -->
-        <AnimatedCursor />
+        <AnimatedCursor/>
 
 
         <!-- Output the page content -->
         <div>
             <slot/>
         </div>
+
+        <!-- Footer -->
+        <div class="wrapper bg-diagonal border-1 border-y-0 border-gray-100 border-solid  dark:border-gray-800
+                    relative">
+            <footer class="container bg-light dark:bg-custom-dark border-1 border-y-0 border-solid border-gray-100
+                    dark:border-gray-800 dark:text-light p-4 pt-30 pb-0">
+                <div>
+                    <div class="absolute left-0 w-screen h-0.5 border-1 border-x-0 border-b-0 border-solid
+                                border-gray-200 dark:border-gray-800"></div>
+                </div>
+
+                <div class="row gap-3">
+                    <div class="col-12-xs col-12-sm col-12-md col-6-lg col-6-xl py-0">
+                        <div class="border-solid border-0 border-gray-100 dark:border-gray-800 h-full px-0 py-8 xs:border-0
+                                    sm:border-0 md:border-0 lg:border-r-1 xl:border-r-1 lg:pr-4 xl:pr-4">
+                            <h1 class="tex-2xl font-medium lh-none mt-2">
+                                Modern CSS That Just Works
+                            </h1>
+
+                            <p class="text-md lh-lg text-gray-600 dark:text-gray-100 max-w-45 my-4">
+                                Yeah, I know-the introduction page suspiciously resembles Tailwind’s one.
+                            </p>
+
+                            <p>© 2025 LumeCSS. All rights reserved.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12-xs col-6-sm col-6-md col-3-lg col-2-xl py-0">
+                        <div class="border-0 px-0 border-solid border-gray-100 dark:border-gray-800 h-full py-8
+                                    sm:border-r-1 md:border-r-1 lg:border-1 xl:border-1 sm:pr-4 md:pr-4 lg:px-4 xl:px-4">
+                            <h3>Links</h3>
+                            <ul>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#color-palette">Color palette</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#installation">Installation</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline" href="#theme">Theme</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#transforms">Transforms</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#grid">Grid</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#filters">Filters</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#how-it-works">How it works</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12-xs col-6-sm col-6-md col-3-lg col-2-xl py-0">
+                        <div class="border-0 border-solid border-gray-100 dark:border-gray-800 h-full py-8 px-0
+                                    sm:border-l-1 md:border-l-1 lg:border-l-1 xl:border-1 sm:px-4 md:px-4 lg:px-4 xl:px-4">
+                            <h3>Projects</h3>
+                            <ul>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#">Lorem</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#">Lorem</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#">Lorem</a>
+                                </li>
+                                <li class="my-4">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline"
+                                       href="#">Lorem</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
     </div>
 </template>
 
@@ -114,6 +206,12 @@ import AnimatedCursor from "../components/AnimatedCursor.vue";
 
 
 <style lang="scss">
+.wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+}
+
 // Diagonal background styles
 .bg-diagonal {
     background-image: repeating-linear-gradient(
